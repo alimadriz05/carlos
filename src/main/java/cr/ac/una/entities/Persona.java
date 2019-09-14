@@ -1,14 +1,13 @@
 package cr.ac.una.entities;
 
-
-
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 
-@Table(name="persona")
+@Table(name = "Persona")
 public class Persona implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int ID_PERSONA;
@@ -16,7 +15,6 @@ public class Persona implements Serializable {
     private String correo;
     private String telefono;
     private String CENTRO_TRABAJO;
-
 
     public Persona() {
     }
